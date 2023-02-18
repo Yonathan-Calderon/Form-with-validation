@@ -1,0 +1,138 @@
+/*-------FONT POPPINS---------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*---------FORMATO HTML------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-------VARIABLES------------*/
+:root{
+/*---------COLORS-------------*/
+/*--------PRIMARY-------------*/
+
+--red: hsl(0, 100%, 74%);
+--green: hsl(154, 59%, 51%);
+--greenShadow: hsla(154, 59%, 51%, 0.5);
+--white: hsl(0, 0%, 100%);
+
+/*---------ACCENT--------------*/
+
+--blue: hsl(248, 32%, 49%);
+--blueShadow: hsla(248, 32%, 49%, 0.50); 
+--redShadow: hsl(0, 48%, 60%); 
+
+/*---------NEUTRAL--------------*/
+
+--darkBlue: hsl(249, 10%, 26%); 
+--grayishBlue: hsl(246, 25%, 77%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--red);
+    background-image: url(/images/bg-intro-mobile.png);
+    color: var(--white);
+}
+
+.main__container {
+    width: 330px;
+    margin: 96px auto 40px;
+}
+
+h1 {
+    width: 235px;
+    font-size: 1.7em;
+    line-height: 38px;
+    margin: -10px auto 16px;
+}
+
+.description{
+    text-align: center;
+    margin: 0 10px 68px;
+}
+
+.offer {
+    background-color: var(--blue);
+    width: 330px;
+    height: 90px;
+    padding: 22px 75px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 0 var(--blueShadow);
+}
+
+.offer__days {
+    font-weight: 700;
+}
+
+.form__container {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding:24px;
+    box-shadow: 0 16px 0 var(--redShadow); 
+   
+}
+input {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    border: 1px solid var(--grayishBlue);
+    padding-left: 20px;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 3px 0 var(--greenShadow);
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+.error__container {
+    position: relative;
+}
+
+.icon__error {
+    position: absolute;
+    right: 15px;
+    top: -45px;
+}
+
+.error_input {
+    color: var(--red);
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    margin: -12px 0 18px;
+}
+
+.terms {
+    color: var(--grayishBlue);
+    font-size: 0.7em;
+    margin: 0 14px;
+    text-align: center;
+}
+
+.terms a{
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
