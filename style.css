@@ -133,6 +133,40 @@ input[type="submit"]:hover{
     font-weight: 700;
 }
 
+/*-----------------DESKTOP------------------*/
+
+@media (min-width: 1120px) {
+    .main__container {
+        display: flex;
+        width: 1114px;
+    }
+
+    h1 {
+        font-size: 3em;
+        width: 414px;
+        line-height: 50px;
+        margin-top: -60px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    section:nth-child(1){
+        padding-top: 200px;
+        width: 570px;
+    }
+    section:nth-child(2){
+        width: 540px;
+    }
+    .offer {
+        width: 100%;
+        height: 60px;
+    }
+}
+
 
 
 
